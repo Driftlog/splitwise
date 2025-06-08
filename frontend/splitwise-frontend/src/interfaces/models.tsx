@@ -13,6 +13,12 @@ export interface reviewInfo {
 
 declare global { 
     interface Window {
-    google: any
+        google: any
+    }
 }
+
+export interface signUp {
+    name:string,
+    email:string,
+    password:string
 }

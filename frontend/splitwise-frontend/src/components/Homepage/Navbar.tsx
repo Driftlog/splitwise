@@ -13,5 +13,4 @@ export default function Navbar() {
          <li className='max-w-full p-2'><Link to='/signUp'><span className='text-sm bg-teal-500 p-2 shadow-sm shadow-black text-white whitespace-nowrap font-medium'>Sign Up</span></Link></li>
         </ul>
     </nav>
-
 }

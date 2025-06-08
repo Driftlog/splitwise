@@ -66,7 +66,7 @@ export default function Login() {
                     </label>
                 </div>
                 <div>
-                    <label > <h1 className="mb-1">Password</h1>
+                    <label> <h1 className="mb-1">Password</h1>
                         <input className="border-1 border-gray-200 w-full min-h-10" type='password'/>
                     </label>
                 </div>
