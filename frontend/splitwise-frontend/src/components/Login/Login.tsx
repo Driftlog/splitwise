@@ -9,6 +9,11 @@ export default function Login() {
 
     const [user, setUser] = useState('')
 
+    function login(e : React.FormEvent) {
+        e.preventDefault()
+        
+    }
+
     function handleCredentialResponse(response: any) {
         console.log('handling jwt response')
         console.log('response is ' + JSON.stringify(response))
@@ -58,7 +63,7 @@ export default function Login() {
    return <div>
         <Navbar/>
         <div className="p-4">
-             <form action="" className='p-4 flex flex-col gap-4 max-w-full border-1 border-gray-200 rounded-md' method='GET'>
+             <form onSubmit={login} className='p-4 flex flex-col gap-4 max-w-full border-1 border-gray-200 rounded-md' method='POST'>
                 <legend className="text-3xl font-light">Log in</legend>
                 <div className="">
                     <label> <h1>Email address</h1>

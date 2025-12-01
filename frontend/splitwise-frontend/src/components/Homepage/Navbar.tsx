@@ -2,7 +2,6 @@ import {Link} from 'react-router'
 import splitwiseLogo from '../../assets/images/splitwise.png'
 
 export default function Navbar() {
-
     return <nav className='flex justify-between items-center p-4'>
         <Link to='/' className='flex ml-2 gap-1 max-w-[550px] items-center'>
             <img className='max-w-1/10 w-full h-auto' alt='splitwise logo' src={splitwiseLogo}/>

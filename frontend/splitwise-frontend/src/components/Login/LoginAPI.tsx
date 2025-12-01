@@ -3,7 +3,6 @@ import { signUp } from "../../interfaces/models"
     export const register = async (formData: signUp) => {
         const registerUrl = "api/registration"   
 
-        try {
         const resp = await fetch(registerUrl, {
                 method: "POST",
                 body: JSON.stringify(formData),
@@ -13,14 +12,17 @@ import { signUp } from "../../interfaces/models"
             })
 
             if (!resp.ok) {
-                throw Error("Email has already been registered")
+                const errMessage = await resp.text()
+                throw new Error(errMessage)
             } 
 
             return resp.json()
-        } catch(error: any) {
-            throw error
-        }
+        } 
 
+    export const login = async(formData : Object) => {
+        
     }
+
+
 
 
